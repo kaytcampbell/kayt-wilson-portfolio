@@ -1,0 +1,17 @@
+.rectangle {
+  background: $primary-color;
+
+  &--top{
+    @extend .rectangle;
+    width: 20px;
+    height: 5000px;
+    transform: rotate(34deg);
+    z-index: 0;
+    position: absolute;
+    top: -450px;
+    right: 90%;
+  }
+  @include breakpoint(xxlarge){
+    right: 80%;
+  }
+}

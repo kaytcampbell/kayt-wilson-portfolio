@@ -1,0 +1,60 @@
+html {
+  border: 20px solid #143962;
+  overflow: auto;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+h1 {
+
+}
+
+.main-content {
+  z-index: 2;
+  position: relative;
+  margin-top: 100px;
+  @include breakpoint(medium){
+    margin-top: 230px;
+  }
+  @include breakpoint(large){
+    margin-top: 260px;
+  }
+  @include breakpoint(xlarge){
+    margin-top: 300px;
+  }
+}
+.home-flower {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.wordmark {
+  z-index: 2;
+  position: relative;
+  max-width: 165px;
+  padding: 0 0.9375rem;
+
+  @include breakpoint(1260px){
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+
+.nav {
+  float: right;
+  padding: 0 0.9375rem;
+  position: relative;
+  z-index: 2;
+
+  @include breakpoint(1260px){
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+
+  a{
+    display: block;
+    font-size: 32px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+}
